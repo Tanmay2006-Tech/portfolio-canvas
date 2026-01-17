@@ -1,0 +1,121 @@
+Create a modern, elegant, interactive personal portfolio website for a female developer named Anandi Mahajan.
+
+Personality & vibe:
+• Soft aesthetic
+• Clean modern UI
+• Elegant animations
+• Feminine but professional
+• Pastel gradients (lavender, blush pink, beige, soft purple)
+• Smooth scrolling
+• Hover animations
+• Subtle glow effects
+• Responsive on mobile and desktop
+
+Tech stack:
+• React (Vite preferred)
+• Tailwind CSS
+• Framer Motion for animations
+• React Router
+• No backend needed (frontend only)
+• Clean component-based structure
+
+Website sections:
+
+1. Landing / Hero Section
+• Animated gradient background
+• Her name in large elegant typography
+• Tagline: “Frontend Developer | UI/UX Enthusiast”
+• Animated typing effect
+• Two buttons:
+  - View Projects
+  - Contact Me
+• Floating shapes / soft blobs animation
+
+2. About Section
+• Profile card layout
+• Soft glassmorphism effect
+• Content:
+  - Passionate frontend developer
+  - Loves creating beautiful UI experiences
+  - Interested in startups, communities, and design
+• Animated reveal on scroll
+
+3. Skills Section
+• Animated skill cards with icons
+• Categories:
+  - HTML
+  - CSS
+  - JavaScript
+  - React
+  - Tailwind
+  - Git & GitHub
+• Progress bars or glowing hover cards
+
+4. Projects Section
+Each project should be displayed in aesthetic cards with hover animation.
+
+Projects:
+
+• ShadowFox Internship Portfolio  
+  https://github.com/ghost33218/ShadowFox-Intern-Portfolio
+
+• Rock Paper Scissors Game  
+  https://github.com/ghost33218/ROCK-PAPER-SCISSOR
+
+• Creavo Startup Website  
+  https://github.com/ghost33218/creavo-Startup--
+
+Each project card must have:
+• Project title
+• Short description
+• GitHub button
+• Hover lift animation
+
+5. Achievements Section
+• GDG Letter (image link)
+  https://media.licdn.com/dms/image/v2/D4E1FAQGRhPXLwde5Rw/feedshare-document-cover-images_480/B4EZkTrDwjGUBY-/0/1756971681239
+
+• ShadowFox Internship Certificate (image link)
+  https://media.licdn.com/dms/image/v2/D4E1FAQG6pX2ab5KEjA/feedshare-document-cover-images_480/B4EZiysLm8GwBM-/0/1755344585685
+
+Display certificates as clickable animated cards with modal preview.
+
+6. Contact Section
+• Email: anandimahajan60@gmail.com
+• GitHub: https://github.com/ghost33218
+• LinkedIn: https://www.linkedin.com/in/anandi-mahajan-432a5412b/
+
+Add social icons with hover glow effect.
+
+7. Footer
+• Text:
+  “Designed with 💜 by Tanmay”
+• Smooth gradient background
+• Minimal style
+
+Extra features:
+• Dark / Light mode toggle
+• Smooth scroll navigation
+• Animated navbar
+• Scroll-to-top button
+• Page transition animations
+• SEO-friendly meta tags
+
+Folder structure:
+src/
+ ├─ components/
+ ├─ pages/
+ ├─ assets/
+ ├─ data/
+ ├─ App.jsx
+ ├─ main.jsx
+
+Design must feel:
+• Instagram aesthetic
+• Pinterest-inspired
+• Clean and premium
+• Something she would love instantly
+
+Do NOT include backend.
+Do NOT use Next.js.
+Use clean readable code.
