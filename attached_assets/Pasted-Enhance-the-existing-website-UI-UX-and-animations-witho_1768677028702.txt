@@ -1,0 +1,169 @@
+Enhance the existing website UI/UX and animations without changing layout or content.
+
+Goal:
+Make the website feel premium, smooth, and professional like a modern tech product landing page.
+
+Do NOT rebuild the site.
+Do NOT change text or sections.
+Only improve animations, micro-interactions, and polish.
+
+--------------------------------
+GLOBAL UX IMPROVEMENTS
+--------------------------------
+
+1. Enable smooth scrolling globally:
+- Add scroll-behavior: smooth
+
+2. Improve spacing rhythm:
+- Increase vertical section spacing (py-24 or py-32)
+- Use max-width layout (max-w-7xl mx-auto)
+
+3. Improve typography hierarchy:
+- Larger hero title
+- Slight letter spacing (tracking-tight)
+- Softer line height (leading-relaxed)
+
+--------------------------------
+FRAMER MOTION ANIMATIONS
+--------------------------------
+
+Add subtle, clean animations only.
+
+Create reusable animation variants:
+
+• fadeUp:
+  opacity: 0 → 1
+  y: 30 → 0
+  duration: 0.6s
+  ease: easeOut
+
+• fadeIn:
+  opacity: 0 → 1
+  duration: 0.6s
+
+• staggerChildren:
+  delayChildren: 0.2
+  staggerChildren: 0.15
+
+Use these effects for:
+
+- Hero section entrance
+- Section headings
+- Cards appearing on scroll
+- Project cards
+- Skill cards
+
+Use:
+whileInView={{ opacity: 1, y: 0 }}
+viewport={{ once: true }}
+
+No infinite animations.
+
+--------------------------------
+HOVER MICRO-INTERACTIONS
+--------------------------------
+
+For cards:
+- scale: 1 → 1.02
+- border glow
+- soft shadow
+- smooth transition (300ms)
+
+Example:
+hover:scale-[1.02]
+hover:border-pink-500/40
+hover:shadow-pink-500/10
+
+For buttons:
+- glow effect on hover
+- slight upward movement (-2px)
+- background fade
+
+--------------------------------
+CARD POLISH
+--------------------------------
+
+Improve cards using:
+
+- backdrop-blur-md
+- bg-white/5
+- border border-white/10
+- rounded-2xl
+
+On hover:
+- border color becomes accent
+- subtle glow
+- no hard shadows
+
+--------------------------------
+NAVBAR UX
+--------------------------------
+
+- Sticky navbar with blur
+- Slight transparency
+- Smooth scroll to sections
+- Active link highlight animation
+- Fade-in on page load
+
+--------------------------------
+SECTION TRANSITIONS
+--------------------------------
+
+As user scrolls:
+- Each section fades up
+- Cards animate sequentially
+- No bounce animations
+- No flashy motion
+
+--------------------------------
+HERO SECTION EFFECTS
+--------------------------------
+
+Add:
+- Subtle floating glow behind name
+- Animated underline under name or role
+- Soft pulse glow using opacity animation
+
+Very slow animation (6–8 seconds).
+
+--------------------------------
+PROJECT CARD UX
+--------------------------------
+
+- Image or gradient placeholder
+- Hover overlay with buttons
+- GitHub button appears smoothly
+- Elevation effect on hover
+
+--------------------------------
+MOBILE UX IMPROVEMENTS
+--------------------------------
+
+- Reduce animation distance
+- Disable heavy shadows
+- Maintain smoothness
+- Touch-friendly buttons
+
+--------------------------------
+IMPORTANT RULES
+--------------------------------
+
+✔ Keep animations subtle
+✔ No flashy motion
+✔ No spinning elements
+✔ No bouncing icons
+✔ Professional only
+✔ Apple / Linear / Vercel style
+
+--------------------------------
+FINAL RESULT SHOULD FEEL LIKE
+--------------------------------
+
+• Premium portfolio
+• Clean tech startup website
+• Smooth scrolling
+• Soft motion
+• Elegant UI
+• Professional polish
+
+Make the site feel expensive and refined.

@@ -50,19 +50,28 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center px-4 overflow-hidden">
         <div className="text-center z-10 max-w-4xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="hero-glow"
           >
-            <span className="inline-block py-1 px-3 rounded-full bg-white/30 dark:bg-white/10 border border-white/20 backdrop-blur-sm text-sm font-semibold text-primary mb-6">
+            <span className="inline-block py-1 px-3 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-sm text-sm font-semibold text-primary mb-6 tracking-wide">
               Hello, I'm
             </span>
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold font-display tracking-tight mb-6">
-              <span className="text-gradient">Anandi</span>
+            <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold font-display tracking-tight mb-6 leading-tight">
+              <span className="text-gradient relative">
+                Anandi
+                <motion.div 
+                  initial={{ width: 0 }}
+                  animate={{ width: "100%" }}
+                  transition={{ delay: 1, duration: 1 }}
+                  className="absolute bottom-2 left-0 h-1.5 bg-primary/30 rounded-full -z-10"
+                />
+              </span>
               <br className="md:hidden" /> Mahajan
             </h1>
             
-            <div className="text-xl md:text-3xl text-muted-foreground font-light mb-8 h-20 md:h-12">
+            <div className="text-xl md:text-3xl text-muted-foreground font-light mb-8 h-20 md:h-12 tracking-tight">
               <TypeAnimation
                 sequence={[
                   'Frontend Developer',
@@ -80,19 +89,19 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.98 }}
                 onClick={scrollToProjects}
-                className="px-8 py-4 bg-primary text-white rounded-full font-semibold shadow-lg shadow-primary/30 hover:shadow-primary/50 transition-all flex items-center gap-2"
+                className="px-8 py-4 bg-primary text-white rounded-full font-semibold shadow-xl shadow-primary/20 hover:shadow-primary/40 transition-all flex items-center gap-2 group"
               >
-                View Projects <ArrowRight className="w-4 h-4" />
+                View Projects <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </motion.button>
               
               <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.98 }}
                 onClick={scrollToContact}
-                className="px-8 py-4 bg-white/80 dark:bg-white/10 backdrop-blur-sm border border-white/20 text-foreground rounded-full font-semibold hover:bg-white/90 transition-all"
+                className="px-8 py-4 glass text-foreground rounded-full font-semibold hover:bg-white/10 transition-all"
               >
                 Contact Me
               </motion.button>

@@ -62,25 +62,45 @@
   * {
     @apply border-border;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
-    @apply bg-background text-foreground selection:bg-primary/30;
+    @apply bg-background text-foreground selection:bg-primary/30 antialiased;
     font-family: var(--font-sans);
+    line-height: 1.6;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
-    @apply font-bold tracking-tight;
+    @apply font-bold tracking-tight leading-tight;
   }
 }
 
 @layer utilities {
-  .glass {
-    @apply bg-white/70 dark:bg-black/40 backdrop-blur-md border border-white/20 dark:border-white/10 shadow-lg;
+  .section-spacing {
+    @apply py-24 md:py-32;
   }
   
+  .max-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .glass {
+    @apply bg-white/5 dark:bg-black/20 backdrop-blur-md border border-white/10 shadow-lg rounded-2xl transition-all duration-300;
+  }
+  
+  .glass-hover {
+    @apply hover:scale-[1.02] hover:border-primary/40 hover:shadow-primary/10;
+  }
+
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-400 to-secondary;
   }
   
+  .hero-glow {
+    @apply relative after:absolute after:inset-0 after:bg-primary/20 after:blur-3xl after:opacity-50 after:-z-10;
+  }
+
   .animate-blob {
     animation: blob 7s infinite;
   }
