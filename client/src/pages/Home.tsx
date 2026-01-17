@@ -15,6 +15,10 @@ import {
 import { FaHtml5, FaCss3Alt, FaReact, FaJs } from "react-icons/fa";
 import { SiTailwindcss, SiGithub } from "react-icons/si";
 
+import profileImg from "@assets/Screenshot_2026-01-17_213726_1768676541072.png";
+import shadowFoxImg from "@assets/image_1768676583407.png";
+import gdgImg from "@assets/image_1768676615316.png";
+
 import { Navigation } from "@/components/Navigation";
 import { Section, SectionHeader } from "@/components/Section";
 import { ProjectCard } from "@/components/ProjectCard";
@@ -102,10 +106,13 @@ export default function Home() {
         <SectionHeader title="About Me" center />
         <div className="glass p-8 md:p-12 rounded-3xl max-w-4xl mx-auto border border-white/20 shadow-xl">
           <div className="grid md:grid-cols-3 gap-8 items-center">
-             {/* Profile Image/Avatar Placeholder */}
-            <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center overflow-hidden relative group">
-                <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary opacity-20 group-hover:opacity-30 transition-opacity" />
-                <span className="text-8xl font-display font-bold text-primary/40">AM</span>
+             {/* Profile Image */}
+            <div className="aspect-square rounded-2xl flex items-center justify-center overflow-hidden relative group">
+                <img 
+                  src={profileImg} 
+                  alt="Anandi Mahajan" 
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
             </div>
             
             <div className="md:col-span-2 space-y-6">
@@ -173,11 +180,11 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <AchievementModal 
             title="GDG Letter"
-            imageUrl="https://media.licdn.com/dms/image/v2/D4E1FAQGRhPXLwde5Rw/feedshare-document-cover-images_480/B4EZkTrDwjGUBY-/0/1756971681239"
+            imageUrl={gdgImg}
           />
           <AchievementModal 
             title="ShadowFox Certificate"
-            imageUrl="https://media.licdn.com/dms/image/v2/D4E1FAQG6pX2ab5KEjA/feedshare-document-cover-images_480/B4EZiysLm8GwBM-/0/1755344585685"
+            imageUrl={shadowFoxImg}
           />
         </div>
       </Section>
