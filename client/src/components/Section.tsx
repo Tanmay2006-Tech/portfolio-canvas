@@ -9,17 +9,17 @@ interface SectionProps {
 
 export function Section({ id, children, className = "" }: SectionProps) {
   return (
-    <section id={id} className={`py-24 md:py-32 relative overflow-hidden ${className}`}>
+    <section id={id} className={`py-32 md:py-48 relative overflow-hidden ${className}`}>
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
+        viewport={{ once: true, margin: "-10% " }}
         variants={{
           visible: { opacity: 1, y: 0 },
-          hidden: { opacity: 0, y: 30 }
+          hidden: { opacity: 0, y: 40 }
         }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10"
+        transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+        className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative z-10"
       >
         {children}
       </motion.div>

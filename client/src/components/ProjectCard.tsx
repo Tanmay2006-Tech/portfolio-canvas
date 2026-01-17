@@ -12,15 +12,14 @@ interface ProjectCardProps {
 export function ProjectCard({ title, description, link, tech, index }: ProjectCardProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
+      initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.6, delay: index * 0.15 }}
-      whileHover={{ y: -5 }}
+      transition={{ duration: 0.8, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
       className="group relative h-full"
     >
-      <div className="absolute -inset-0.5 bg-gradient-to-r from-primary via-purple-500 to-secondary rounded-2xl opacity-0 group-hover:opacity-40 blur transition-all duration-500" />
-      <div className="relative h-full glass p-8 border border-white/10 flex flex-col justify-between hover:border-primary/40 group-hover:shadow-2xl group-hover:shadow-primary/10">
+      <div className="absolute -inset-0.5 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-2xl opacity-0 group-hover:opacity-100 blur-xl transition-all duration-700" />
+      <div className="relative h-full glass p-8 border border-white/10 flex flex-col justify-between hover:border-primary/20 group-hover:bg-white/10 dark:group-hover:bg-black/30 transition-all duration-500 premium-border">
         <div>
           <div className="flex justify-between items-start mb-4">
             <h3 className="text-2xl font-bold font-display text-foreground group-hover:text-primary transition-colors">

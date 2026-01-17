@@ -17,8 +17,8 @@ export function SkillBadge({ icon, name, index }: SkillBadgeProps) {
       whileHover={{ 
         scale: 1.05, 
         y: -5,
-        borderColor: "rgba(var(--primary), 0.4)",
-        boxShadow: "0 20px 25px -5px rgba(var(--primary), 0.1)"
+        borderColor: "rgba(168, 85, 247, 0.4)",
+        boxShadow: "0 20px 25px -5px rgba(168, 85, 247, 0.1)"
       }}
       className="flex flex-col items-center justify-center p-6 glass rounded-2xl border border-white/10 hover:border-primary/40 transition-all duration-300 group"
     >

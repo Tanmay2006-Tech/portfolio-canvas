@@ -64,11 +64,16 @@
   }
   html {
     scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
   body {
     @apply bg-background text-foreground selection:bg-primary/30 antialiased;
     font-family: var(--font-sans);
     line-height: 1.6;
+    background-image: 
+      radial-gradient(at 0% 0%, hsla(270, 60%, 70%, 0.05) 0, transparent 50%),
+      radial-gradient(at 100% 100%, hsla(330, 60%, 85%, 0.05) 0, transparent 50%);
+    background-attachment: fixed;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
@@ -78,31 +83,31 @@
 
 @layer utilities {
   .section-spacing {
-    @apply py-24 md:py-32;
+    @apply py-32 md:py-48;
   }
   
   .max-container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply max-w-7xl mx-auto px-6 sm:px-8 lg:px-12;
   }
 
   .glass {
-    @apply bg-white/5 dark:bg-black/20 backdrop-blur-md border border-white/10 shadow-lg rounded-2xl transition-all duration-300;
+    @apply bg-white/5 dark:bg-black/20 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(31,38,135,0.07)] rounded-2xl transition-all duration-500;
   }
   
   .glass-hover {
-    @apply hover:scale-[1.02] hover:border-primary/40 hover:shadow-primary/10;
+    @apply hover:scale-[1.01] hover:border-primary/30 hover:shadow-primary/5 hover:bg-white/10 dark:hover:bg-black/30;
   }
 
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-400 to-secondary;
+    @apply bg-clip-text text-transparent bg-gradient-to-br from-primary via-purple-400 to-secondary;
   }
   
   .hero-glow {
-    @apply relative after:absolute after:inset-0 after:bg-primary/20 after:blur-3xl after:opacity-50 after:-z-10;
+    @apply relative after:absolute after:inset-0 after:bg-primary/10 after:blur-[120px] after:opacity-30 after:-z-10;
   }
 
   .animate-blob {
-    animation: blob 7s infinite;
+    @apply animate-[blob_10s_infinite];
   }
   
   .animation-delay-2000 {
@@ -111,6 +116,10 @@
   
   .animation-delay-4000 {
     animation-delay: 4s;
+  }
+
+  .premium-border {
+    @apply relative before:absolute before:inset-0 before:rounded-2xl before:p-[1px] before:bg-gradient-to-br before:from-white/20 before:to-transparent before:-z-10;
   }
 }
 
