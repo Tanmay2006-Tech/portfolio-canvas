@@ -15,7 +15,7 @@ import {
 import { FaHtml5, FaCss3Alt, FaReact, FaJs } from "react-icons/fa";
 import { SiTailwindcss, SiGithub } from "react-icons/si";
 
-import profileImg from "@assets/Screenshot_2026-01-17_213726_1768676541072.png";
+import profileImg from "@assets/image_1768722110319.png";
 import shadowFoxImg from "@assets/image_1768676583407.png";
 import gdgImg from "@assets/image_1768676615316.png";
 
