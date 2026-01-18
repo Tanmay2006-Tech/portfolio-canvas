@@ -23,6 +23,7 @@
   
   --card: 0 0% 100%;
   --card-foreground: 270 10% 20%;
+  --card-border: 270 20% 90%;
   
   --border: 270 20% 90%;
   --input: 270 20% 90%;
@@ -52,6 +53,7 @@
   
   --card: 270 15% 12%;
   --card-foreground: 280 20% 95%;
+  --card-border: 270 20% 20%;
   
   --border: 270 20% 20%;
   --input: 270 20% 20%;
