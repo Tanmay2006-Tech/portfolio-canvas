@@ -18,6 +18,7 @@ import { SiTailwindcss, SiGithub } from "react-icons/si";
 import profileImg from "@assets/image_1768722240404.png";
 import shadowFoxImg from "@assets/image_1768676583407.png";
 import gdgImg from "@assets/image_1768676615316.png";
+import resumePdf from "@assets/ANANDI_MAHAJAN_1768724089340.pdf";
 
 import { Navigation } from "@/components/Navigation";
 import { Section, SectionHeader } from "@/components/Section";
@@ -109,6 +110,15 @@ export default function Home() {
                 className="px-8 py-4 bg-primary text-white rounded-full font-semibold shadow-lg shadow-primary/30 hover:shadow-primary/50 transition-all flex items-center gap-2"
               >
                 View Projects <ArrowRight className="w-4 h-4" />
+              </motion.button>
+              
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => window.open(resumePdf, '_blank')}
+                className="px-8 py-4 bg-white/80 dark:bg-white/10 backdrop-blur-sm border border-white/20 text-foreground rounded-full font-semibold hover:bg-white/90 transition-all"
+              >
+                Download Resume
               </motion.button>
               
               <motion.button
