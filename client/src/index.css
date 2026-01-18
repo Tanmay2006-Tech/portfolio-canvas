@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;400;500;600&family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -78,17 +78,7 @@
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-400 to-secondary animate-gradient-x;
   }
-}
 
-@keyframes gradient-x {
-  0%, 100% { background-size: 200% 200%; background-position: left center; }
-  50% { background-size: 200% 200%; background-position: right center; }
-}
-
-.animate-gradient-x {
-  animation: gradient-x 15s ease infinite;
-}
-  
   .animate-blob {
     animation: blob 7s infinite;
   }
@@ -100,6 +90,15 @@
   .animation-delay-4000 {
     animation-delay: 4s;
   }
+}
+
+@keyframes gradient-x {
+  0%, 100% { background-size: 200% 200%; background-position: left center; }
+  50% { background-size: 200% 200%; background-position: right center; }
+}
+
+.animate-gradient-x {
+  animation: gradient-x 15s ease infinite;
 }
 
 @keyframes blob {
