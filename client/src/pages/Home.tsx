@@ -264,7 +264,7 @@ export default function Home() {
       <footer className="py-8 text-center bg-white/50 dark:bg-black/50 backdrop-blur-md border-t border-white/10">
         <div className="container mx-auto px-4">
           <p className="text-muted-foreground font-medium">
-            Designed with <span className="text-primary animate-pulse">💜</span> by Tanmay
+            Designed with <span className="text-primary animate-pulse">💜</span> 
           </p>
           <p className="text-sm text-muted-foreground/60 mt-2">
             © {new Date().getFullYear()} Anandi Mahajan. All rights reserved.

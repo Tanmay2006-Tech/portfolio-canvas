@@ -89,7 +89,7 @@ Add social icons with hover glow effect.
 
 7. Footer
 • Text:
-  “Designed with 💜 by Tanmay”
+  “Designed with 💜 ”
 • Smooth gradient background
 • Minimal style
 
