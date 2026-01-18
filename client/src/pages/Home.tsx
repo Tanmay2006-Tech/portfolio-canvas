@@ -36,7 +36,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-background overflow-x-hidden selection:bg-primary/30">
+    <div className="min-h-screen bg-background overflow-x-hidden selection:bg-primary/30 scroll-smooth">
       <Navigation />
       
       {/* Decorative Background Blobs */}
@@ -48,6 +48,25 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center px-4 overflow-hidden">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <motion.div 
+            animate={{ 
+              rotate: 360,
+              scale: [1, 1.1, 1],
+            }}
+            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+            className="absolute top-1/4 -left-20 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[100px]"
+          />
+          <motion.div 
+            animate={{ 
+              rotate: -360,
+              scale: [1, 1.2, 1],
+            }}
+            transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
+            className="absolute bottom-1/4 -right-20 w-[600px] h-[600px] bg-secondary/10 rounded-full blur-[120px]"
+          />
+        </div>
         <div className="text-center z-10 max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -58,7 +77,7 @@ export default function Home() {
               Hello, I'm
             </span>
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold font-display tracking-tight mb-6">
-              <span className="text-gradient">Anandi</span>
+              <span className="text-gradient drop-shadow-[0_0_15px_rgba(var(--primary),0.3)]">Anandi</span>
               <br className="md:hidden" /> Mahajan
             </h1>
             
