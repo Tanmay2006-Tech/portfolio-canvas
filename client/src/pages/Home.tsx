@@ -52,19 +52,23 @@ export default function Home() {
         <div className="absolute inset-0 pointer-events-none">
           <motion.div 
             animate={{ 
+              x: [0, 50, 0],
+              y: [0, 30, 0],
               rotate: 360,
-              scale: [1, 1.1, 1],
-            }}
-            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-            className="absolute top-1/4 -left-20 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[100px]"
-          />
-          <motion.div 
-            animate={{ 
-              rotate: -360,
               scale: [1, 1.2, 1],
             }}
             transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-            className="absolute bottom-1/4 -right-20 w-[600px] h-[600px] bg-secondary/10 rounded-full blur-[120px]"
+            className="absolute top-1/4 -left-20 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px] mix-blend-screen dark:mix-blend-soft-light"
+          />
+          <motion.div 
+            animate={{ 
+              x: [0, -40, 0],
+              y: [0, 60, 0],
+              rotate: -360,
+              scale: [1, 1.3, 1],
+            }}
+            transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+            className="absolute bottom-1/4 -right-20 w-[700px] h-[700px] bg-secondary/20 rounded-full blur-[140px] mix-blend-screen dark:mix-blend-soft-light"
           />
         </div>
         <div className="text-center z-10 max-w-4xl mx-auto">
@@ -77,7 +81,7 @@ export default function Home() {
               Hello, I'm
             </span>
             <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold font-display tracking-tight mb-6">
-              <span className="text-gradient drop-shadow-[0_0_15px_rgba(var(--primary),0.3)]">Anandi</span>
+              <span className="text-gradient drop-shadow-[0_0_25px_rgba(var(--primary),0.5)]">Anandi</span>
               <br className="md:hidden" /> Mahajan
             </h1>
             
